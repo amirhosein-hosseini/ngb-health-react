@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "regular";
+  src: url("../public/font/SFUIText-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "bold";
+  src: url("../public/font/SFUIText-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "heavy";
+  src: url("../public/font/SFUIText-Heavy.woff") format("woff");
+}
+@font-face {
+  font-family: "light";
+  src: url("../public/font/SFUIText-Light.woff") format("woff");
+}
+@font-face {
+  font-family: "medium";
+  src: url("../public/font/SFUIText-Medium.woff") format("woff");
+}
+@font-face {
+  font-family: "semi-bold";
+  src: url("../public/font/SFUIText-Semibold.woff") format("woff");
+}
+
+
+body{
+  background: black;
+  overflow: hidden;
+}
+html{
+  overflow-x: hidden;
+}
+p,h1,h3,small,span{
+  color: white;
+}
+
+*{
+  margin: 0;
+  box-sizing: border-box;
+}
+*::before , *::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-font-somoothing: antialiased;
+}
+button{
+  cursor: pointer;
+}
+button,input,textarea,select{
+  font: inherit;
+}
+p,h1,h2,h3,h4,h5,h6{
+  overflow-wrap: break-word;
+}
+img,video,canvas,svg{
+  max-width: 100%;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+button{
+  border: none;
+  outline: none;
+}

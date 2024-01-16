@@ -1,0 +1,39 @@
+.bluebutton{
+    background: #6BA4FA;
+    border-radius: 11px;
+    padding: 7px 21px;
+    font-family: "light";
+    font-size: 33px;
+    color: white;
+}
+
+.greenarrowbutton{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: transparent;
+    font-family: "regular";
+    font-size: 22px;
+    color: white;
+}
+
+.bluearrowbutton{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    font-family: "regular";
+    font-size: 24px;
+    color: white;
+    gap: 12px;
+}
+
+.graybutton{
+    border-radius: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: #686868;
+    font-family: "medium";
+    font-size: 32px;
+    color: white;
+    padding: 10px 65px;
+}

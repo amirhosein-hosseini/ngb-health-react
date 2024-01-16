@@ -1,0 +1,65 @@
+.product{
+    position: relative;
+    margin-top: 100px;
+    &__wrapper{
+        position: relative;
+        display: flex;
+        gap: 70px;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        align-items: flex-start;
+        z-index: 2;
+        margin-bottom: 100px;
+        &__left{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .image{
+                max-width: 670px;
+                overflow: hidden;
+                img{
+                    object-fit: cover;
+                    width: 100%;
+                }
+            }
+            .desc{
+                p{
+                    font-family: "light";
+                    font-size: 20px;
+                    color: white;
+                }
+            }
+        }
+        &__right{
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .title{
+                font-family: "bold";
+                font-size: 27px;
+                color: white;
+            }
+            .desc{
+                font-family: "light";
+                font-size: 20px;
+                color: white;
+            }
+        }
+    }
+    &__gradient{
+        position: absolute;
+        bottom: -200px;
+        right: -200px;
+        width: 665px;
+        height: 665px;
+        flex-shrink: 0;
+        border-radius: 665px;
+        opacity: 0.67;
+        background: #D9D9D9;
+        filter: blur(241.0500030517578px);
+        z-index: 1;
+    }
+}
