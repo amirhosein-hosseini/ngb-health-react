@@ -10,7 +10,7 @@
         margin: 0 auto;
         align-items: flex-start;
         z-index: 2;
-        margin-bottom: 100px;
+        margin-bottom: 300px;
         &__left{
             flex: 1;
             display: flex;
@@ -47,6 +47,12 @@
                 font-size: 20px;
                 color: white;
             }
+        }
+        .lightvector{
+            position: absolute;
+            bottom: -120px;
+            left: 50%;
+            transform: translate(-50%,0);
         }
     }
     &__gradient{

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import { getAllProductContents } from "../../api/product";
 import { domain } from "../../api/domain";
+import TopFooter from "../TopFooter/topFooter";
 
 const ProductPage = () => {
 
@@ -53,8 +54,12 @@ const ProductPage = () => {
                         {productContents?.right_description}
                     </p>
                 </div>
+                <div className={styles.lightvector}>
+                    <img src="../../images/lightvector.png" alt="vector" />
+                </div>
             </div>
             <div className={styles.product__gradient}></div>
+            <TopFooter />
         </div>
     )
 }

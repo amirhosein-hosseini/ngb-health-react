@@ -13,9 +13,36 @@
                 display: flex;
                 gap: 20px;
                 a{
-                    font-family: "medium";
-                    font-size: 23px;
+                    position: relative;
+                    font-family: "light";
+                    font-size: 14px;
                     color: white;
+                    &::after{
+                        position: absolute;
+                        content: "";
+                        width: 0%;
+                        height: 2px;
+                        background: #65A3FF;
+                        filter: drop-shadow(2px -1px 0px rgba(255, 255, 255, 0.00));
+                        bottom: -5px;
+                        left: 0;
+                        border-radius: 10px;
+                        transition: 0.3s;
+                    }
+                }
+                a:hover{
+                    &::after{
+                        width: 100%;
+                    }
+                }
+            }
+            .logo{
+                max-width: 120px;
+                overflow: hidden;
+                margin-right: 30px;
+                img{
+                    object-fit: cover;
+                    width: 100%;
                 }
             }
         }
@@ -27,9 +54,13 @@
                 display: flex;
                 gap: 14px;
                 align-items: center;
-                img{
-                    width: 27px;
-                    height: 27px;
+                svg{
+                    width: 24px;
+                    height: 24px;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: translateY(-7px);
+                    }
                 }
             }
             .input{

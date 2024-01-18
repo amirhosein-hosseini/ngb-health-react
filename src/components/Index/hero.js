@@ -1,4 +1,5 @@
 import { domain } from "../../api/domain";
+import { GrayButton } from "../Button/Button";
 import styles from "./styles.module.scss";
 
 const Hero = ({data}) => {
@@ -34,6 +35,9 @@ const Hero = ({data}) => {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div className={styles.hero__button}>
+                <GrayButton>Explore</GrayButton>
             </div>
         </div>
     )

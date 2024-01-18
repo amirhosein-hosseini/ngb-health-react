@@ -1,6 +1,6 @@
 import React from "react";
 import styles from './styles.module.scss';
-import { GreenArrowButton } from "../Button/Button";
+import { BlueButton, GreenArrowButton } from "../Button/Button";
 
 const GetInTouch = () => {
     return(
@@ -8,7 +8,8 @@ const GetInTouch = () => {
             <p className={styles.getintouch__title}>
                 Want to keep in touch? Join our email
                 <br />
-                list to stay up-to-date
+                list to stay up-to-date 
+                <BlueButton>Connected</BlueButton>
             </p>
             <p className={styles.getintouch__subtitle}>
                 Get in touch 

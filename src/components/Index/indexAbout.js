@@ -1,5 +1,5 @@
 import { domain } from "../../api/domain";
-import { BlueArrowButton, GrayButton } from "../Button/Button";
+import { BlueArrowButton, BlueButton, GrayButton } from "../Button/Button";
 import styles from "./styles.module.scss";
 
 const IndexAbout = ({data}) => {
@@ -13,13 +13,16 @@ const IndexAbout = ({data}) => {
             <div className={styles.indexaboutvector}>
                 <img src="../../images/indexaboutvector.png" alt="vector" />
             </div>
-            <div className={styles.container}>
+            <div className={styles.indexaboutcontainer}>
+                <div className={styles.lightvector}>
+                    <img src="../../images/lightvector.png" alt="vector" />
+                </div>
                 <div className={styles.indexabout__desc}>
-                    <p className={styles.title}>
-                        {data?.title_ceo}
-                    </p>
                     <p className={styles.subtitle}>
                         {data?.name_ceo}
+                    </p>
+                    <p className={styles.title}>
+                        {data?.title_ceo}
                     </p>
                     <p className={styles.desc}>
                         {data?.academic_title}
@@ -27,8 +30,15 @@ const IndexAbout = ({data}) => {
                         {data?.study_field_title}
                     </p>
                     <div className={styles.buttons}>
-                        <BlueArrowButton>Contact us </BlueArrowButton>
-                        <BlueArrowButton>FAQ </BlueArrowButton>
+                        <div>
+                            <BlueArrowButton>Contact us </BlueArrowButton>
+                        </div>
+                        <div>
+                            <BlueArrowButton>FAQ </BlueArrowButton>
+                        </div>
+                        <div style={{marginTop: "40px"}}>
+                            <BlueButton>Connected</BlueButton>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.indexabout__image}>

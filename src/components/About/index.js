@@ -43,9 +43,6 @@ const AboutPage = () => {
                 <AboutDesc title={"Our Mission"} desc={teamContants?.team_content[0]?.mission_description} />
             </div>
             <div className={styles.about__main}>
-                <div className={styles.abouttoprightvector}>
-                    <img src="../../images/abouttoprightvector.png" alt="vector" />
-                </div>
                 <div className={styles.aboutcentervector}>
                     <img src="../../images/aboutcentervector.png" alt="vecotr" />
                 </div>

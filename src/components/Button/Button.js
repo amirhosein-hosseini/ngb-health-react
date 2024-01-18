@@ -23,8 +23,12 @@ export const BlueButton = ({children}) => {
 export const BlueArrowButton = ({children}) => {
     return(
         <button className={styles.bluearrowbutton}>
-            <img src="../../images/bluearrow.png" alt="icon" />
-            {children}
+            <div className={styles.arrow}>
+                <img src="../../images/whiterightarrow.png" alt="icon" />
+            </div>
+            <p>
+                {children}
+            </p>
         </button>
     )
 }

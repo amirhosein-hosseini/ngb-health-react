@@ -1,10 +1,17 @@
 .bluebutton{
-    background: #6BA4FA;
+    background: #7B7B7B;
     border-radius: 11px;
     padding: 7px 21px;
     font-family: "light";
-    font-size: 33px;
+    font-size: 24px;
     color: white;
+    transition: 0.3s;
+    border: 1px solid #FFF;
+    &:hover{
+        background: #65A3FF;
+        filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
+        border: 1px solid #65A3FF;
+    }
 }
 
 .greenarrowbutton{
@@ -21,19 +28,49 @@
     display: flex;
     align-items: center;
     background: transparent;
-    font-family: "regular";
+    font-family: "light";
     font-size: 24px;
     color: white;
     gap: 12px;
+    padding: 0;
+    transition: 0.3s;
+    .arrow{
+        background: #7B7B7B;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    p{
+        transition: 0.3s;
+    }
+    &:hover{
+        .arrow{
+            background: #65A3FF;
+            filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
+        }
+        gap: 16px;
+    }
 }
 
 .graybutton{
-    border-radius: 35px;
+    border-radius: 55px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
-    background: #686868;
+    background: #ABABAB;
     font-family: "medium";
     font-size: 32px;
     color: white;
     padding: 10px 65px;
+    transition: 0.3s;
+    border: 1px solid #FFF;
+    &:hover{
+        background: #65A3FF;
+        filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
+        border: none;
+        border: 1px solid #65A3FF;
+    }
 }

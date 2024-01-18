@@ -20,10 +20,6 @@ const TopFooter = () => {
                         <img src="../../images/america.png" alt="icon" />
                         <p>+1 725 934-3352 </p>
                     </div>
-                    <div className={styles.item}>
-                        <img src="../../images/canada.png" alt="icon" />
-                        <p>+1 905 955-8212 </p>
-                    </div>
                 </div>
             </div>
             <div className={styles.topfooter__right}>
