@@ -337,20 +337,27 @@
     margin: 0 auto;
     text-align: left;
     margin-bottom: 250px;
+    &__firsttitle{
+        font-family: "regular";
+        font-size: 65px;
+        color: white;
+        display: flex;
+        align-items: center;
+        button{
+            margin-left: 30px;
+        }
+    }
     &__title{
         font-family: "regular";
         font-size: 50px;
         color: white;
         margin-bottom: 50px;
-        button{
-            margin-left: 30px;
-        }
     }
     &__subtitle{
         font-family: "bold";
         font-size: 44px;
         color: #70A9FF;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
     }
     &__input{
         display: flex;

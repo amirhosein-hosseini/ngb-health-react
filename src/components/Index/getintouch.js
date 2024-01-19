@@ -5,11 +5,14 @@ import { BlueButton, GreenArrowButton } from "../Button/Button";
 const GetInTouch = () => {
     return(
         <div className={styles.getintouch}>
+            <p className={styles.getintouch__firsttitle}>
+                Want to know more? Let's talk
+                <BlueButton>Connected</BlueButton> 
+            </p>
             <p className={styles.getintouch__title}>
                 Want to keep in touch? Join our email
                 <br />
                 list to stay up-to-date 
-                <BlueButton>Connected</BlueButton>
             </p>
             <p className={styles.getintouch__subtitle}>
                 Get in touch 
