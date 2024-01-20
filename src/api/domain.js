@@ -1,1 +1,1 @@
-export const domain = "https://nbg-health.com/api/";
+export const domain = "https://nbg-health.com/";

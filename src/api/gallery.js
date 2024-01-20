@@ -4,7 +4,7 @@ import { domain } from "./domain";
 
 export const getAllGalleryContents = async () => {
     try {
-        const response = await axios.get(domain + 'gallery/gallery/');
+        const response = await axios.get(domain + "api/" + 'gallery/gallery/');
         
 
         if (response.status === 200) {

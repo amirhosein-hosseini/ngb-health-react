@@ -4,7 +4,7 @@ import { domain } from "./domain";
 
 export const getAllProductContents = async () => {
     try {
-        const response = await axios.get(domain + 'news/news/');
+        const response = await axios.get(domain + "api/" + 'news/news/');
         
 
         if (response.status === 200) {

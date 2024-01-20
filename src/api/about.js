@@ -4,7 +4,7 @@ import { domain } from "./domain";
 
 export const getAllTeamContents = async () => {
     try {
-        const response = await axios.get(domain + 'team_content/');
+        const response = await axios.get(domain + "api/" + 'team_content/');
         
 
         if (response.status === 200) {
