@@ -9,6 +9,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Gallery from './pages/Gallery';
 import Paper from './pages/Paper';
+import Contact from './pages/Contact';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path='/company' element={ <Company /> } />
           <Route path='/gallery' element={ <Gallery /> } />
           <Route path='/paper' element={ <Paper /> } />
+          <Route path='/contact' element={ <Contact /> } />
         </Routes>
       <Footer />
     </>

@@ -1,0 +1,88 @@
+.contactwrapper{
+    margin-top: 100px;
+    .contact{
+        position: relative;
+        max-width: 700px;
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 100px;
+        margin-bottom: 200px;
+        padding-bottom: 120px;
+        &::after{
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(to right , rgba(66, 168, 242, 1), rgba(66, 242, 210, 0.26));
+        }
+        &__title{
+            p{
+                font-family: "bold";
+                font-size: 73px;
+                color: #65A3FF;
+                text-shadow: 14px 18px 116.8px rgba(255, 255, 255, 0.80);
+                text-align: center;
+            }
+        }
+        &__desc{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .title{
+                font-family: "medium";
+                font-size: 24px;
+                color: white;   
+            }
+            .desc{
+                font-family: "light";
+                font-size: 24px;
+                color: white;
+                max-width: 534px;
+            }
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+            width: 100%;
+            .title{
+                font-family: "heavy";
+                font-size: 41px;
+                color: white;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                gap: 18px;
+                .formgroup{
+                    width: 100%;
+                    input{
+                        width: 100%;
+                        padding: 25px 11px;
+                        border-radius: 10px;
+                        font-family: "light";
+                        font-size: 29px;
+                        color: #000;
+                        &::placeholder{
+                            font-family: "light";
+                            font-size: 29px;
+                            color: #888;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,1 +1,1 @@
-export const domain = "http://86.106.142.25/";
+export const domain = "http://86.106.142.25/api/";
