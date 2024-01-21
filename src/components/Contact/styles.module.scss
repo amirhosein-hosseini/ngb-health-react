@@ -29,6 +29,9 @@
                 color: #65A3FF;
                 text-shadow: 14px 18px 116.8px rgba(255, 255, 255, 0.80);
                 text-align: center;
+                @media only screen and (max-width:768px){
+                    font-size: 25px;
+                }
             }
         }
         &__desc{
@@ -38,13 +41,19 @@
             .title{
                 font-family: "medium";
                 font-size: 24px;
-                color: white;   
+                color: white;  
+                @media only screen and (max-width:768px){
+                    font-size: 14px;
+                } 
             }
             .desc{
                 font-family: "light";
                 font-size: 24px;
                 color: white;
                 max-width: 534px;
+                @media only screen and (max-width:768px){
+                    font-size: 11px;
+                }
             }
         }
         &__form{
@@ -58,6 +67,9 @@
                 font-family: "heavy";
                 font-size: 41px;
                 color: white;
+                @media only screen and (max-width:768px){
+                    font-size: 18px;
+                }
             }
             form{
                 display: flex;
@@ -75,10 +87,16 @@
                         font-family: "light";
                         font-size: 29px;
                         color: #000;
+                        @media only screen and (max-width:768px){
+                            font-size: 12px;
+                        }
                         &::placeholder{
                             font-family: "light";
                             font-size: 29px;
                             color: #888;
+                            @media only screen and (max-width:768px){
+                                font-size: 12px;
+                            }
                         }
                     }
                 }

@@ -50,11 +50,13 @@ const IndexAbout = ({data}) => {
                     <p className={styles.title}>
                         Description
                     </p>
-                    <p className={styles.desc}>
-                        {data?.description}
-                    </p>
-                    <div className={styles.buttons}>
+                    <div className={styles.desc}>
+                        <p>
+                            {data?.description}
+                        </p>
                         <GrayButton>More</GrayButton>
+                    </div>
+                    <div className={styles.buttons}>
                         <BlueArrowButton>Watch video</BlueArrowButton>
                     </div>
                 </div>

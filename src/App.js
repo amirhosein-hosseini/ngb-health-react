@@ -5,11 +5,12 @@ import { Route, Routes } from 'react-router-dom';
 import About from './pages/About';
 import Product from './pages/Product';
 import Company from './pages/Company';
-import Header from './components/Header/Header';
+
 import Footer from './components/Footer/Footer';
 import Gallery from './pages/Gallery';
 import Paper from './pages/Paper';
 import Contact from './pages/Contact';
+import Header from './components/Header';
 
 function App() {
   return (

@@ -4,15 +4,16 @@ import PaperTimeline from "./PaperTimeline";
 import PaperFiles from "./PaperFiles";
 
 const PaperPage = () => {
-    document.body.style.backgroundColor = '#001636';
 
 
 
 
     return(
-        <div className={styles.paper}>
-            <PaperTimeline />
-            <PaperFiles />
+        <div className={styles.paperwrapper}>
+            <div className={styles.paper}>
+                <PaperTimeline />
+                <PaperFiles />
+            </div>
         </div>
     )
 }

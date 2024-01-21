@@ -12,6 +12,11 @@
         filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
         border: 1px solid #65A3FF;
     }
+    @media only screen and (max-width:768px){
+        padding: 4px 14px;
+        font-size: 14px;
+        border-radius: 4.5px;
+    }
 }
 
 .greenarrowbutton{
@@ -22,6 +27,27 @@
     font-family: "light";
     font-size: 22px;
     color: white;
+    transition: 0.3s;
+    .arrow{
+        background: #7B7B7B;
+        border-radius: 50%;
+        width: 42px;
+        height: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s;
+    }
+    p{
+        transition: 0.3s;
+    }
+    &:hover{
+        .arrow{
+            background: #42F2D2;
+            filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
+        }
+        gap: 16px;
+    }
 }
 
 .bluearrowbutton{
@@ -72,5 +98,9 @@
         filter: drop-shadow(4px 4px 16.8px rgba(255, 255, 255, 0.48));
         border: none;
         border: 1px solid #65A3FF;
+    }
+    @media only screen and (max-width:768px){
+        padding: 3px 16px;
+        font-size: 14px;
     }
 }

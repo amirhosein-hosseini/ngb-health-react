@@ -5,7 +5,9 @@ export const GreenArrowButton = ({children}) => {
     return(
         <button className={styles.greenarrowbutton}>
             {children}
-            <img src="../../images/greenarrow.png" alt="icon" />
+            <div className={styles.arrow}>
+                <img src="../../images/whiterightarrow.png" alt="icon" />
+            </div>
         </button>
     )
 }

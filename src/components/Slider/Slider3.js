@@ -15,7 +15,7 @@ const Slider3 = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 7,
+        slidesToShow: 6,
         slidesToScroll: 1,
         responsive: [
           {

@@ -35,6 +35,12 @@ p,h1,h3,small,span{
   color: white;
 }
 
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh; /* Ensure full viewport height is covered when scroll is hidden */
+}
+
 *{
   margin: 0;
   box-sizing: border-box;

@@ -11,6 +11,14 @@ const Slider2 = () => {
     infinite: true,
     speed: 500,
     focusOnSelect: true,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerPadding: '8%',
+        },
+      },
+    ],
   };
 
   return (

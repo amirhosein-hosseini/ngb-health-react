@@ -11,6 +11,9 @@
         align-items: flex-start;
         z-index: 2;
         margin-bottom: 300px;
+        @media only screen and (max-width:768px){
+            flex-direction: column;
+        }
         &__left{
             flex: 1;
             display: flex;
@@ -29,6 +32,9 @@
                     font-family: "light";
                     font-size: 20px;
                     color: white;
+                    @media only screen and (max-width:768px){
+                        font-size: 15px;
+                    }
                 }
             }
         }
@@ -41,11 +47,17 @@
                 font-family: "bold";
                 font-size: 27px;
                 color: white;
+                @media only screen and (max-width:768px){
+                    font-size: 20px;
+                }
             }
             .desc{
                 font-family: "light";
                 font-size: 20px;
                 color: white;
+                @media only screen and (max-width:768px){
+                    font-size: 15px;
+                }
             }
         }
         .lightvector{

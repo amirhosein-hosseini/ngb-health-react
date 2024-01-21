@@ -1,8 +1,8 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
-const Header = () => {
+const LargeHeader = () => {
     return(
         <div className={styles.header}>
             <div className={styles.header__wrapper}>
@@ -48,4 +48,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default LargeHeader;
