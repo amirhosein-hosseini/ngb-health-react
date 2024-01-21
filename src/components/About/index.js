@@ -29,8 +29,6 @@ const AboutPage = () => {
     }, []);
 
 
-    // console.log(teamContants)
-
 
     return(
         <div className={styles.about}>
@@ -46,9 +44,9 @@ const AboutPage = () => {
                 <div className={styles.aboutcentervector}>
                     <img src="../../images/aboutcentervector.png" alt="vecotr" />
                 </div>
-                <AboutCategory />
-                <AboutCategory />
-                <AboutCategory />
+                {teamContants?.team_person?.map((item) => (
+                    <AboutCategory data={item} />
+                ))}
                 <div className={styles.secondaboutdesc}>
                     <div className={styles.lightvector}>
                         <img src="../../images/lightvector.png" alt="vector" />
@@ -56,7 +54,7 @@ const AboutPage = () => {
                     <AboutDesc title={"Our Vision"} desc={teamContants?.team_content[0]?.vision_description} />
                 </div>
             </div>
-            <AboutValues data={teamContants?.team_values} />
+            <AboutValues data={teamContants?.our_values} />
             <GetInTouch />
             <TopFooter />
         </div>

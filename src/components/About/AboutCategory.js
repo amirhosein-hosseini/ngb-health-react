@@ -1,57 +1,42 @@
 import React from "react";
+import { domain } from "../../api/domain";
 import styles from "./styles.module.scss";
 
-const AboutCategory = () => {
+const AboutCategory = ({data}) => {
+
+
+    console.log(data)
+
+
     return(
         <div className={styles.aboutcategory}>
             <div className={styles.aboutcategory__header}>
                 <p className={styles.title}>
-                    Executive leadership team
+                    {data?.header}
                 </p>
             </div>
             <div className={styles.aboutcategory__items}>
-                <div className={styles.item}>
-                    <div className={styles.item__image}>
-                        <img src="../../images/aboutimage.png" alt="image" />
+                {data?.team_category?.map((item) => (
+                    <div className={styles.item}>
+                        <div className={styles.item__image}>
+                            <img src={domain + item?.image.substring(1)} alt="image" />
+                        </div>
+                        <div className={styles.item__footer}>
+                            <p className={styles.name}>
+                                {item?.name}
+                            </p>
+                            <p className={styles.category}>
+                                {item?.title}
+                            </p>
+                        </div>
                     </div>
-                    <div className={styles.item__footer}>
-                        <p className={styles.name}>
-                            Amirhosein Moghanian 
-                        </p>
-                        <p className={styles.category}>
-                            Chief Executive Officer, Founder 
-                        </p>
-                    </div>
-                </div>
-                <div className={styles.item}>
-                    <div className={styles.item__image}>
-                        <img src="../../images/aboutimage.png" alt="image" />
-                    </div>
-                    <div className={styles.item__footer}>
-                        <p className={styles.name}>
-                            Amirhosein Moghanian 
-                        </p>
-                        <p className={styles.category}>
-                            Chief Executive Officer, Founder 
-                        </p>
-                    </div>
-                </div>
-                <div className={styles.item}>
-                    <div className={styles.item__image}>
-                        <img src="../../images/aboutimage.png" alt="image" />
-                    </div>
-                    <div className={styles.item__footer}>
-                        <p className={styles.name}>
-                            Amirhosein Moghanian 
-                        </p>
-                        <p className={styles.category}>
-                            Chief Executive Officer, Founder 
-                        </p>
-                    </div>
-                </div>
+                ))}
             </div>
         </div>
     )
 }
 
 export default AboutCategory;
+
+
+

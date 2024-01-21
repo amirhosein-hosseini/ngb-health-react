@@ -18,9 +18,11 @@ const AboutValues = ({data}) => {
                             {item?.values_title}
                         </p>
                         <ul>
-                            <li>
-                                {item?.values_description}
-                            </li>
+                            {item?.list_values?.map((item) => (
+                                <li>
+                                    {item}
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 ))}

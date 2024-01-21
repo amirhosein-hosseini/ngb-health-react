@@ -53,6 +53,47 @@
 }
 
 
+
+@keyframes movingGradientColor {
+    0% {
+        background: rgba(217, 217, 217, 0.37);
+    }
+    25% {
+        background: rgba(217, 217, 217, 0.54);
+    }
+    50% {
+        background: #D9D9D9;
+    }
+    75% {
+        background: rgba(217, 217, 217, 0.54);
+    }
+    100% {
+        background: rgba(217, 217, 217, 0.37);
+    }
+}
+
+
+@keyframes movingBlueGradientColor {
+    0% {
+        background: rgba(101, 163, 255, 0.37);
+    }
+    25% {
+        background: rgba(101, 163, 255, 0.54);
+    }
+    50% {
+        background: #65A3FF;
+    }
+    75% {
+        background: rgba(101, 163, 255, 0.54);
+    }
+    100% {
+        background: rgba(101, 163, 255, 0.37);
+    }
+}
+
+
+
+
 @keyframes textWritingAnimation {
     from {
       width: 0;
@@ -97,9 +138,10 @@
         height: 665px;
         flex-shrink: 0;
         border-radius: 665px;
-        background: #D9D9D9;
+        // background: #D9D9D9;
         filter: blur(241.0500030517578px);
         z-index: -1;
+        animation: movingGradientColor 3s infinite; 
         @media only screen and (max-width:768px){
             bottom: 0;
             width: 180px;
@@ -125,7 +167,7 @@
             left: -190px;
             top: -275px;
             animation: movingAnimation 6s infinite; 
-            max-width: 685px;
+            max-width: 600px;
             overflow: hidden;
             img{
                 object-fit: cover;
@@ -341,11 +383,11 @@
         height: 875px;
         flex-shrink: 0;
         border-radius: 875px;
-        background: #65A3FF;
         filter: blur(423.54998779296875px);
         top: 0;
         left: -35%;
         z-index: -1;
+        animation: movingBlueGradientColor 3s infinite; 
         @media only screen and (max-width:768px){
             display: none;
         }
