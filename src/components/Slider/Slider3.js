@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { domain } from "../../api/domain";
 
-const Slider3 = ({data}) => {
+const Slider3 = ({children}) => {
     
 
 
@@ -46,51 +46,7 @@ const Slider3 = ({data}) => {
     
       return (
         <Slider {...settings}>
-            {data?.map((item) => (
-                <div className="timeline-item">
-                    <img src="../../images/timelinevector.png" alt="icon" />
-                    <p>
-                        2020
-                    </p>
-                </div>
-            ))}
-
-            {/* <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div> */}
+            {children}
         </Slider>
       );
 }

@@ -1,18 +1,25 @@
 import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
+import PdfViewer from "./PdfViewer";
+import PdfOneViewer from "./PdfOneViewer";
 
 const PaperFiles = ({data}) => {
 
 
 
-    const [files , setFiles] = useState(null)
+    const [files , setFiles] = useState(null);
+    const [pdf , setPdf] = useState(null);
 
 
     const handleSetFile = (files) => {
         setFiles(files)
     }
 
-    // console.log(data)
+    const handlepdf = (pdffile) => {
+        setPdf(pdffile);
+    }
+
+    console.log(files)
 
     
 
@@ -33,14 +40,14 @@ const PaperFiles = ({data}) => {
                 {files?.map((item) => (
                     <div className={styles.papernames__item}>
                         <img src="../../images/pdficon.png" alt="icon" />
-                        <p>
+                        <p onClick={() => handlepdf(item?.pdf_file)}>
                             {item?.title}
                         </p>
                     </div>
                 ))}
             </div>
+            {pdf != null ? <PdfViewer url={pdf} /> : ""}
         </div>
-
     )
 }
 
