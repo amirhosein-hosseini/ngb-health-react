@@ -8,6 +8,7 @@ import Slider2 from "../Slider/Slider2";
 const GalleryPage = () => {
 
     const [imageSrc , setImageSrc] = useState(null);
+    const [videoSrc , setVideoSrc] = useState(null);
     const [bannerSrc , setBannerSrc] = useState(null);
     const [galleryContents , setGalleryContents] = useState(null);
     
@@ -16,6 +17,7 @@ const GalleryPage = () => {
           try {
             const data = await getAllGalleryContents();
             setImageSrc(data.data?.image_slide);
+            setVideoSrc(data.data?.video_slide);
             setGalleryContents(data.data);
           } catch (error) {
             console.error("Error fetching data:", error);
@@ -40,7 +42,17 @@ const GalleryPage = () => {
 
     return(
         <div className={styles.gallery}>
-            <Slider2 />
+            <Slider2>
+                {videoSrc?.map((item) => (
+                    <div className="my-second-slider-item">
+                        {item && (
+                            <video controls>
+                                <source src={String(domain + item.substring(1))} type="video/mp4" />
+                            </video>
+                        )}
+                    </div>
+                ))}
+            </Slider2>
             <div className={styles.gallery__main}>
                 <div className={styles.banner}>
                     <img src={domain + bannerSrc?.image_slide?.substring(1)} alt="image" />
