@@ -25,8 +25,6 @@ const IndexAbout = ({data}) => {
                         {data?.title_ceo}
                     </p>
                     <p className={styles.desc}>
-                        {data?.academic_title}
-                        <br/>
                         {data?.study_field_title}
                     </p>
                     <div className={styles.buttons}>

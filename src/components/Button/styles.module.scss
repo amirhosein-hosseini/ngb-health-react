@@ -1,9 +1,9 @@
 .bluebutton{
     background: #7B7B7B;
     border-radius: 11px;
-    padding: 7px 21px;
+    padding: 3px 12px;
     font-family: "light";
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     transition: 0.3s;
     border: 1px solid #FFF;
@@ -25,18 +25,21 @@
     gap: 12px;
     background: transparent;
     font-family: "light";
-    font-size: 22px;
+    font-size: 18px;
     color: white;
     transition: 0.3s;
     .arrow{
         background: #7B7B7B;
         border-radius: 50%;
-        width: 42px;
-        height: 42px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 0.3s;
+        img{
+            width: 15px;
+        }
     }
     p{
         transition: 0.3s;
@@ -55,7 +58,7 @@
     align-items: center;
     background: transparent;
     font-family: "light";
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     gap: 12px;
     padding: 0;
@@ -63,12 +66,15 @@
     .arrow{
         background: #7B7B7B;
         border-radius: 50%;
-        width: 42px;
-        height: 42px;
+        width: 30px;
+        height: 30px;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: 0.3s;
+        img{
+            width: 15px;
+        }
     }
     p{
         transition: 0.3s;
@@ -88,9 +94,9 @@
     border-bottom-left-radius: 20px;
     background: #ABABAB;
     font-family: "medium";
-    font-size: 28px;
+    font-size: 20px;
     color: white;
-    padding: 10px 45px;
+    padding: 5px 45px;
     transition: 0.3s;
     border: 1px solid #FFF;
     &:hover{

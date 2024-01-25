@@ -80,7 +80,7 @@ const ResponsiveHeader = () => {
                                     <Link to="/company">Technolohy</Link>
                                 </li>
                                 <li>
-                                    <Link to="/about">About Team</Link>
+                                    <Link to="/about">About Us</Link>
                                 </li>
                                 <li>
                                     <Link to="/paper">Resources</Link>

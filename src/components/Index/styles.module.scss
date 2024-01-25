@@ -341,7 +341,7 @@
         flex-direction: column;
         .title{
             font-family: "light";
-            font-size: 45px;
+            font-size: 30px;
             margin-bottom: 7px;
             @media only screen and (max-width:768px){
                 font-size: 20px;
@@ -460,7 +460,7 @@
         p{
             position: relative;
             font-family: "light";
-            font-size: 24px;
+            font-size: 18px;
             text-align: justify;
             color: white;
             z-index: 5;
@@ -615,7 +615,7 @@
     }
     &__title{
         font-family: "light";
-        font-size: 36px;
+        font-size: 28px;
         color: white;
         margin-bottom: 50px;
         @media only screen and (max-width:768px){

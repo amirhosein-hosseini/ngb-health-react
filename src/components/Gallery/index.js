@@ -40,6 +40,8 @@ const GalleryPage = () => {
         setBannerSrc(imagesource);
     }
 
+    console.log(videoSrc)
+
     return(
         <div className={styles.gallery}>
             <Slider2>
@@ -47,7 +49,7 @@ const GalleryPage = () => {
                     <div className="my-second-slider-item">
                         {item && (
                             <video controls>
-                                <source src={String(domain + item.substring(1))} type="video/mp4" />
+                                <source src={String(domain + item?.video_slide?.substring(1))} type="video/mp4" />
                             </video>
                         )}
                     </div>

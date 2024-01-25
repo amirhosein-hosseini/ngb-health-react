@@ -30,7 +30,7 @@ const PaperPage = () => {
 
     return(
         <div className={styles.paperwrapper}>
-            <div className={styles.paper}>
+            <div className={styles.papercompeletewrapper}>
                 {PaperContents && (
                     <PaperTimeline data={PaperContents} />
                 )}

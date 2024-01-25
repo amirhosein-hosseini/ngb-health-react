@@ -21,7 +21,7 @@ const PaperTimeline = ({data}) => {
             <div className={styles.timeline}>
                 <div className={styles.timeline__item}>
                     <div>
-                        <Slider3>
+                        <div className={styles.datewrapper}>
                             {data?.map((item) => (
                                 <div className="timeline-item" onClick={() => handleCategory(item?.date_paper)}>
                                     <img src="../../images/timelinevector.png" alt="icon" />
@@ -30,7 +30,7 @@ const PaperTimeline = ({data}) => {
                                     </p>
                                 </div>
                             ))}
-                        </Slider3>
+                        </div>
                     </div>
                 </div>
             </div>

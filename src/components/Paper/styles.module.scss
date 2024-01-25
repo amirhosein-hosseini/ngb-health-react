@@ -20,7 +20,14 @@
     backdrop-filter: blur(20.899999618530273px);
     padding: 50px 40px;
     margin-bottom: 100px;
-    width: 95%;
+    max-width: 1200px;
+    width: 90%;
+    &__item{
+        .datawrapper{
+            display: flex;
+            gap: 15px;
+        }
+    }
     &::before {
         content: "";
         position: absolute;
@@ -38,11 +45,15 @@
 
 
 
+
 .paper{
     .paperfiles{
         display: grid;
         grid-template-columns: repeat(8,minmax(0,1fr));
         gap: 15px;
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
         &__item{
             display: flex;
             flex-direction: column;
@@ -58,6 +69,9 @@
         }
     }
     .papernames{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
         display: grid;
         grid-template-columns: repeat(5,minmax(0,1fr));
         gap: 12px;
@@ -77,4 +91,10 @@
             }
         }
     }
+}
+
+
+.embed{
+    width: 90%;
+    margin: 0 auto;
 }
