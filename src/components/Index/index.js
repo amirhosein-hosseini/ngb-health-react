@@ -33,36 +33,44 @@ const Index = () => {
 
 
 
+
+
     return(
-        <>
-            <div className={styles.tophero}>
-                <div className={styles.tophero__gradient}></div>
-                <div className={styles.container}>
-                    <div className={styles.tophero__desc}>
-                        <p>
-                            {homeContents?.title}
-                        </p>
+        <div>
+            {homeContents && (
+                <>
+                    <div className={styles.tophero}>
+                        <div className={styles.tophero__gradient}></div>
+                        <div className={styles.container}>
+                            <div className={styles.tophero__desc}>
+                                <p>
+                                    {homeContents?.title}
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <Hero data={homeContents} />
-            <IndexAbout data={homeContents} />
-            <Modified data={homeContents} />
-            <div className={styles.main}>
-                <div className={styles.main__video}>
-                    <video controls >
-                        <source src={domain + homeContents?.study_video.substring(1)} type="video/mp4"/>
-                    </video>
-                </div>
-                <div className={styles.main__buttons}>
-                    <Link to="#"><BlueButton>AI Solution</BlueButton></Link>    
-                    <Link to="#"><BlueButton>Product</BlueButton></Link> 
-                    <Link to="#"><BlueButton>Company</BlueButton></Link>     
-                </div>
-                <GetInTouch />
-                <TopFooter />
-            </div>
-        </>
+                    <Hero data={homeContents} />
+                    <IndexAbout data={homeContents} />
+                    <Modified data={homeContents} />
+                    <div className={styles.main}>
+                        <div className={styles.main__video}>
+                        {homeContents?.study_video && (
+                            <video controls>
+                                <source src={String(domain + homeContents.study_video.substring(1))} type="video/mp4" />
+                            </video>
+                        )}
+                        </div>
+                        <div className={styles.main__buttons}>
+                            <Link to="#"><BlueButton>AI Solution</BlueButton></Link>    
+                            <Link to="#"><BlueButton>Product</BlueButton></Link> 
+                            <Link to="#"><BlueButton>Company</BlueButton></Link>     
+                        </div>
+                        <GetInTouch />
+                        <TopFooter />
+                    </div>
+                </>
+            )}
+        </div>
     )
 }
 

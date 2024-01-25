@@ -5,7 +5,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { domain } from "../../api/domain";
 
-const Slider3 = () => {
+const Slider3 = ({data}) => {
     
 
 
@@ -46,14 +46,16 @@ const Slider3 = () => {
     
       return (
         <Slider {...settings}>
-            <div className="timeline-item">
-                <img src="../../images/timelinevector.png" alt="icon" />
-                <p>
-                    2020
-                </p>
-            </div>
+            {data?.map((item) => (
+                <div className="timeline-item">
+                    <img src="../../images/timelinevector.png" alt="icon" />
+                    <p>
+                        2020
+                    </p>
+                </div>
+            ))}
 
-            <div className="timeline-item">
+            {/* <div className="timeline-item">
                 <img src="../../images/timelinevector.png" alt="icon" />
                 <p>
                     2020
@@ -88,7 +90,7 @@ const Slider3 = () => {
                 <p>
                     2020
                 </p>
-            </div>
+            </div> */}
         </Slider>
       );
 }

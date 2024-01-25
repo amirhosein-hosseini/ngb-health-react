@@ -1,9 +1,29 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./styles.module.scss";
 import PaperTimeline from "./PaperTimeline";
 import PaperFiles from "./PaperFiles";
+import { getAllPaperContents } from "../../api/paper";
 
 const PaperPage = () => {
+
+
+    const [PaperContents , setPaperContents] = useState(null)
+
+    
+    useEffect(() => {
+        const fetchData = async () => {
+          try {
+            const data = await getAllPaperContents();
+            setPaperContents(data.data);
+          } catch (error) {
+            console.error("Error fetching data:", error);
+          }
+        };
+    
+        fetchData();
+    }, []);
+
+
 
 
 
@@ -11,8 +31,9 @@ const PaperPage = () => {
     return(
         <div className={styles.paperwrapper}>
             <div className={styles.paper}>
-                <PaperTimeline />
-                <PaperFiles />
+                {PaperContents && (
+                    <PaperTimeline data={PaperContents} />
+                )}
             </div>
         </div>
     )

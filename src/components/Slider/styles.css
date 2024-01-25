@@ -51,11 +51,13 @@
 
 
 .timeline-item{
+    position: relative;
     display: flex !important;
     align-items: center;
     gap: 10px;
     justify-content: center;
     cursor: pointer;
+    z-index: 1000;
 }
 .timeline-item img{
     width: 30px;
