@@ -77,7 +77,7 @@ const ResponsiveHeader = () => {
                                     <Link to="/product">Product</Link>
                                 </li>
                                 <li>
-                                    <Link to="/company">Technolohy</Link>
+                                    <Link to="/company">Technology</Link>
                                 </li>
                                 <li>
                                     <Link to="/about">About Us</Link>

@@ -1,13 +1,16 @@
 import React from "react";
 import styles from './styles.module.scss';
 import { BlueButton, GreenArrowButton } from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const GetInTouch = () => {
     return(
         <div className={styles.getintouch}>
             <p className={styles.getintouch__firsttitle}>
                 Want to know more? Let's talk
-                <BlueButton>Connected</BlueButton> 
+                <Link to="/contact">
+                    <BlueButton>Connected</BlueButton> 
+                </Link>
             </p>
             <p className={styles.getintouch__title}>
                 Want to keep in touch? Join our email

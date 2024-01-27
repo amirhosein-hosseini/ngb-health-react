@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { domain } from "../../api/domain";
 import { GrayButton } from "../Button/Button";
 import styles from "./styles.module.scss";
@@ -37,7 +38,9 @@ const Hero = ({data}) => {
                 </div>
             </div>
             <div className={styles.hero__button}>
-                <GrayButton>Explore</GrayButton>
+                <Link to="/product">
+                    <GrayButton>Explore</GrayButton>
+                </Link>
             </div>
         </div>
     )

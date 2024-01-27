@@ -14,7 +14,7 @@ const LargeHeader = () => {
                     </div>
                     <div className={styles.list}>
                         <Link to="/product">Product</Link>
-                        <Link to="/company">Technolohy</Link>
+                        <Link to="/company">Technology</Link>
                         <Link to="/about">About Us</Link>
                         <Link to="/paper">Resources</Link>
                         <Link to="/company">Company</Link>

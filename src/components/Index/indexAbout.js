@@ -1,10 +1,18 @@
+import { Link } from "react-router-dom";
 import { domain } from "../../api/domain";
 import { BlueArrowButton, BlueButton, GrayButton } from "../Button/Button";
 import styles from "./styles.module.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const IndexAbout = ({data}) => {
 
 
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
 
     return(
@@ -17,7 +25,7 @@ const IndexAbout = ({data}) => {
                 <div className={styles.lightvector}>
                     <img src="../../images/lightvector.png" alt="vector" />
                 </div>
-                <div className={styles.indexabout__desc}>
+                <div className={styles.indexabout__desc} data-aos="fade-right" data-aos-duration="2500">
                     <p className={styles.subtitle}>
                         {data?.name_ceo}
                     </p>
@@ -39,7 +47,7 @@ const IndexAbout = ({data}) => {
                         </div>
                     </div>
                 </div>
-                <div className={styles.indexabout__image}>
+                <div className={styles.indexabout__image} data-aos="zoom-in" data-aos-duration="2500">
                     <img src={domain + data?.ceo_image.substring(1)} alt="image" />
                 </div>
             </div>
@@ -48,14 +56,18 @@ const IndexAbout = ({data}) => {
                     <p className={styles.title}>
                         Description
                     </p>
-                    <div className={styles.desc}>
+                    <div className={styles.desc} data-aos="zoom-in" data-aos-duration="2500">
                         <p>
                             {data?.description}
                         </p>
-                        <GrayButton>More</GrayButton>
+                        <Link to="/company">
+                            <GrayButton>More</GrayButton>
+                        </Link>
                     </div>
                     <div className={styles.buttons}>
-                        <BlueArrowButton>Watch video</BlueArrowButton>
+                        <Link to="/gallary">
+                            <BlueArrowButton>Watch video</BlueArrowButton>
+                        </Link>
                     </div>
                 </div>
             </div>

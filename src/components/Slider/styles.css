@@ -38,6 +38,13 @@
 }
 .my-second-slider-item{
     padding: 0px 10px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.my-second-slider-item video{
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px;
 }
 .my-slide-item img{
     object-fit: cover;

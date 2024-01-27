@@ -1,0 +1,25 @@
+.timeline-item{
+    display: flex !important;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    cursor: pointer;
+}
+.timeline-item img{
+    width: 30px !important;
+    height: 30px;
+}
+.timeline-item p{
+    font-family: "medium";
+    font-size: 20px;
+    color: white;
+}
+@media only screen and (max-width:768px){
+    .timeline-item p{
+        font-size: 14px;
+    }
+    .timeline-item img{
+        width: 20px !important;
+        height: 20px;
+    }
+}

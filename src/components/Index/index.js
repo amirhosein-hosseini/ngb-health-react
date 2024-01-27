@@ -9,10 +9,16 @@ import GetInTouch from './getintouch';
 import TopFooter from '../TopFooter/topFooter';
 import { getAllHomeContents } from '../../api/home';
 import { domain } from '../../api/domain';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 const Index = () => {
 
+
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
     const [homeContents , setHomeContents] = useState(null)
 
@@ -53,7 +59,7 @@ const Index = () => {
                     <IndexAbout data={homeContents} />
                     <Modified data={homeContents} />
                     <div className={styles.main}>
-                        <div className={styles.main__video}>
+                        <div className={styles.main__video} data-aos="zoom-in" data-aos-duration="2500">
                         {homeContents?.study_video && (
                             <video controls>
                                 <source src={String(domain + homeContents.study_video.substring(1))} type="video/mp4" />
@@ -62,8 +68,8 @@ const Index = () => {
                         </div>
                         <div className={styles.main__buttons}>
                             <Link to="#"><BlueButton>AI Solution</BlueButton></Link>    
-                            <Link to="#"><BlueButton>Product</BlueButton></Link> 
-                            <Link to="#"><BlueButton>Company</BlueButton></Link>     
+                            <Link to="/product"><BlueButton>Product</BlueButton></Link> 
+                            <Link to="/company"><BlueButton>Company</BlueButton></Link>     
                         </div>
                         <GetInTouch />
                         <TopFooter />

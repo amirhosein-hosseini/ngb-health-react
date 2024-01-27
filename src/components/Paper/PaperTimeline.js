@@ -20,18 +20,17 @@ const PaperTimeline = ({data}) => {
         <>
             <div className={styles.timeline}>
                 <div className={styles.timeline__item}>
-                    <div>
-                        <div className={styles.datewrapper}>
+                        <Slider3>
                             {data?.map((item) => (
-                                <div className="timeline-item" onClick={() => handleCategory(item?.date_paper)}>
+                                <div
+                                    className="timeline-item"
+                                    onClick={() => handleCategory(item?.date_paper)}
+                                >
                                     <img src="../../images/timelinevector.png" alt="icon" />
-                                    <p>
-                                        {item?.date}
-                                    </p>
+                                    <p>{item?.date}</p>
                                 </div>
                             ))}
-                        </div>
-                    </div>
+                        </Slider3>
                 </div>
             </div>
             {category != null ? <PaperFiles data={category} /> : ""}

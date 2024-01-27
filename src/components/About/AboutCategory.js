@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { domain } from "../../api/domain";
 import styles from "./styles.module.scss";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const AboutCategory = ({data}) => {
 
-
-    console.log(data)
+    useEffect(() => {
+        AOS.init();
+    }, [])
 
 
     return(
@@ -17,7 +20,7 @@ const AboutCategory = ({data}) => {
             </div>
             <div className={styles.aboutcategory__items}>
                 {data?.team_category?.map((item) => (
-                    <div className={styles.item}>
+                    <div className={styles.item} data-aos="zoom-in" data-aos-duration="2500">
                         <div className={styles.item__image}>
                             <img src={domain + item?.image.substring(1)} alt="image" />
                         </div>
