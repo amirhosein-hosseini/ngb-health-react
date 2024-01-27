@@ -37,13 +37,17 @@ const IndexAbout = ({data}) => {
                     </p>
                     <div className={styles.buttons}>
                         <div>
-                            <BlueArrowButton>Contact us </BlueArrowButton>
+                            <Link to="/contact">
+                                <BlueArrowButton>Contact us </BlueArrowButton>
+                            </Link>
                         </div>
                         <div>
                             <BlueArrowButton>FAQ </BlueArrowButton>
                         </div>
                         <div style={{marginTop: "40px"}}>
-                            <BlueButton>Connected</BlueButton>
+                            <Link to="/contact">
+                                <BlueButton>Connected</BlueButton>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -65,7 +69,7 @@ const IndexAbout = ({data}) => {
                         </Link>
                     </div>
                     <div className={styles.buttons}>
-                        <Link to="/gallary">
+                        <Link to="/gallery">
                             <BlueArrowButton>Watch video</BlueArrowButton>
                         </Link>
                     </div>

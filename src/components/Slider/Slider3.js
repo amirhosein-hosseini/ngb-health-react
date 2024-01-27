@@ -9,7 +9,7 @@ const Slider3 = ({children}) => {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: 3, // Initial number of slides on a computer device
+    slidesToShow: 4, // Initial number of slides on a computer device
     slidesToScroll: 1,
     responsive: [
       {

@@ -11,11 +11,14 @@ import Gallery from './pages/Gallery';
 import Paper from './pages/Paper';
 import Contact from './pages/Contact';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+
 
 function App() {
   return (
     <>
       <Header />
+        <ScrollToTop />
         <Routes>
           <Route path='/' element={ <HomePage /> } />
           <Route path='/about' element={ <About /> } />

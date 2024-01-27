@@ -1,8 +1,8 @@
-.slick-slider{
+/* .slick-slider{
     display: flex !important;
     align-items: center;
     gap: 15px;
-}
+} */
 .prev{
     cursor: pointer;
     width: 28.75px;
