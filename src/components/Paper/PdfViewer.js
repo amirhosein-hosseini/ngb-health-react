@@ -1,32 +1,14 @@
 import React, { useState } from 'react';
 import { Document, Page } from 'react-pdf';
 import { domain } from '../../api/domain';
+import styles from "./styles.module.scss";
 
 const PdfViewer = ({ url }) => {
-  const [numPages, setNumPages] = useState();
-  const [pageNumber, setPageNumber] = useState(1);
-
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
-  if (!url) {
-    return <p>No PDF URL provided.</p>;
-  }
-
-  console.log(url)
+  const pdfUrl = url; // Replace with the actual path or URL of your PDF file
 
   return (
-    <div>
-      {url != null ?
-        <Document file={domain + url.substring(1)} onLoadSuccess={onDocumentLoadSuccess}>
-          <Page pageNumber={pageNumber} />
-        </Document>
-        :""
-      }
-      <p>
-        Page {pageNumber} of {numPages}
-      </p>
+    <div className={styles.embed1}>
+      <embed src={url} width="100%" height="600px" type="application/pdf" />
     </div>
   );
 };

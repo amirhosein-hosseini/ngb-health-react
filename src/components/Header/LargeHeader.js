@@ -1,8 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./styles.module.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const LargeHeader = () => {
+
+    const navigate = useNavigate();
+    const [value , setValue] = useState(null);
+
+    const handleInputChange = (event) => {
+        setValue(event.target.value)
+    }
+
+    const handleSearch = () => {
+        navigate('/search/' + value)
+    }
+
+
+
     return(
         <div className={styles.header}>
             <div className={styles.header__wrapper}>
@@ -39,8 +53,8 @@ const LargeHeader = () => {
                         </Link>
                     </div>
                     <div className={styles.input}>
-                        <input type="text" />
-                        <img src="../../images/searchvector.png" alt="icon" />
+                        <input type="text" onChange={handleInputChange} />
+                        <img src="../../images/searchvector.png" alt="icon" onClick={handleSearch} />
                     </div>
                 </div>
             </div>

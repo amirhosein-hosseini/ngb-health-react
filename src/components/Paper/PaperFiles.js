@@ -19,7 +19,6 @@ const PaperFiles = ({data}) => {
         setPdf(pdffile);
     }
 
-    console.log(files)
 
     
 

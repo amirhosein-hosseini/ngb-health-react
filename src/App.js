@@ -12,6 +12,7 @@ import Paper from './pages/Paper';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop/ScrollToTop';
+import Search from './components/Search';
 
 
 function App() {
@@ -27,6 +28,7 @@ function App() {
           <Route path='/gallery' element={ <Gallery /> } />
           <Route path='/paper' element={ <Paper /> } />
           <Route path='/contact' element={ <Contact /> } />
+          <Route path='/search/:slug' element={ <Search /> } />
         </Routes>
       <Footer />
     </>
